@@ -1,1 +1,1 @@
-# INIProcessor
+# C++ INI Processor
