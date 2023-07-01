@@ -18,5 +18,7 @@ int main(int argc, char* argv[])
 	IF.Save("Test2.ini");
 	cin.get();
 
+	//Test Change
+
 	return 0;
 }
