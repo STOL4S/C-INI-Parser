@@ -1,4 +1,4 @@
-# C++ INI File Processor
+# C++ INI File Parser
 This project contains the source code and compiled .lib for the INIFile class. 
 The INIFile class is a data structure that allows for loading and saving of .ini files. 
 Once a file is loaded into memory, it's variables can be read or modified and then saved to file again.
