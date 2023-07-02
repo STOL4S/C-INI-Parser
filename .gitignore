@@ -88,3 +88,9 @@
 /Project/.vs/INIProcessor/v17/Browse.VC.db-wal
 /Project/.vs/INIProcessor/v17/Browse.VC.opendb
 /Project/.vs/INIProcessor/v17/ipch/AutoPCH/5860c4f17a5e2e58/MAIN.ipch
+/Project/x64/Debug/INIProcessor.idb
+/Project/x64/Debug/INIProcessor.lib.recipe
+/Project/x64/Debug/INIProcessor.tlog/Lib-link.read.1.tlog
+/Project/x64/Debug/INIProcessor.tlog/Lib-link.write.1.tlog
+/Project/x64/Debug/INIProcessor.tlog/Lib.command.1.tlog
+*.vsidx
