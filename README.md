@@ -1,7 +1,6 @@
 # C++ INI File Processor
-  This project contains a class, INIFile, and a test environment for this class.
-The INIFile class is a data structure that allows for easy loading and saving
-of .ini file types. Once a .ini file is loaded into memory, its variables/values
-can be read or modified and then saved again to the harddrive. This class aims
-to make it easier for C++ programmers to load/save settings to file that can
-also be changed by the end user, without need for Windows resource files.
+This project contains the source code and compiled .lib for the INIFile class. 
+The INIFile class is a data structure that allows for loading and saving of .ini files. 
+Once a file is loaded into memory, it's variables can be read or modified and then saved to file again.
+Most function calls return custom HRESULTs for easy debugging of any errors that may occur.
+The goal is to make a compact .ini file reader and writer that anyone can use in their project.
