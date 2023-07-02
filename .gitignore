@@ -94,3 +94,15 @@
 /Project/x64/Debug/INIProcessor.tlog/Lib-link.write.1.tlog
 /Project/x64/Debug/INIProcessor.tlog/Lib.command.1.tlog
 *.vsidx
+*.recipe
+*.log
+*.pdb
+*.tlog
+/Project/x64/Release/INIProcessor.vcxproj.FileListAbsolute.txt
+/TestEnv/main.cpp
+/TestEnv/Test.ini
+/TestEnv/TestEnv.vcxproj
+/TestEnv/TestEnv.vcxproj.filters
+/TestEnv/TestEnv.vcxproj.user
+/TestEnv/x64/Debug/TestEnv.ilk
+/TestEnv/x64/Debug/vc143.idb
