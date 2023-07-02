@@ -343,7 +343,9 @@ HRESULT INIFile::Save(std::string _Path)
 	std::ofstream _Output(_Path.c_str(), std::ios::out);
 	if (_Output.good())
 	{
-		_Output << ToString();
+		std::string Buffer = "";
+		ToString(Buffer);
+		_Output << Buffer.c_str();
 		_Output.close();
 
 		return S_OK;

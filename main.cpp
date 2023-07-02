@@ -10,7 +10,10 @@ int main(int argc, char* argv[])
 {
 	INIFile IF = INIFile("Test.ini");
 
-	cout << IF.ToString() << endl;
+	std::string Buffer = "";
+	IF.ToString(Buffer);
+
+	cout << Buffer.c_str() << endl;
 
 	DWORD TEST = 0;
 	IF.GetValueByName("TEST_ADDRESS", TEST);
