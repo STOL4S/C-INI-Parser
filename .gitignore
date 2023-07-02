@@ -112,3 +112,4 @@
 /Project/.vs/INIProcessor/v17/Solution.VC.db
 /Project/.vs/INIProcessor/v17/Solution.VC.db-shm
 /Project/.vs/INIProcessor/v17/Solution.VC.db-wal
+*.ipch
