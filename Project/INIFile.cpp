@@ -27,6 +27,13 @@ INIFile::INIFile(std::string _Path)
 	LoadINIFileData(PATH);
 }
 
+INIFile::INIFile(std::map<std::string, std::string> _VALUES)
+{
+	VALUES = _VALUES;
+	HEADERS = std::map<std::string, int>();
+	PATH = "";
+}
+
 INIFile::~INIFile()
 {
 	VALUES.clear();
@@ -335,7 +342,16 @@ HRESULT INIFile::ToString(std::string& _Out)
 
 HRESULT INIFile::Save()
 {
-	return Save(PATH);
+	if (PATH != "")
+	{
+		return Save(PATH);
+	}
+	else
+	{
+		//NO FILE PATH PROVIDED
+		//FILE WAS LIKELY CREATED IN MEMORY
+		return E_INI_FILE_BAD_PATH;
+	}
 }
 
 HRESULT INIFile::Save(std::string _Path)
@@ -347,6 +363,13 @@ HRESULT INIFile::Save(std::string _Path)
 		ToString(Buffer);
 		_Output << Buffer.c_str();
 		_Output.close();
+
+		//IF FILE WAS CREATED IN MEMORY
+		//SAVE THIS PATH AS THE NEW FILE PATH
+		if (PATH == "")
+		{
+			PATH = _Path;
+		}
 
 		return S_OK;
 	}
